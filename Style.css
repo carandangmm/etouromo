@@ -1,0 +1,570 @@
+body {
+    background-image: url(images/1.png);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-family: 'Mukta', sans-serif;
+}
+
+.logo-container img {
+    width: 200px;  
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;  
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+
+
+.AboutPage {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40%;
+}
+
+.AP_header {
+    text-align: center;
+    width: 570px;
+    margin-bottom: 20px;
+}
+
+.AP_header h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #1971B1;
+    font-weight: bold;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 5px;
+}
+
+.AP_header p {
+    font-size: 30px;
+    font-family: 'Monda', sans-serif;
+    margin-top: 10px;
+    width: 1000px;
+    position: relative;
+    right: 250px;
+    
+}
+
+.AP_mid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 40px;
+    margin-left: 25%;
+}
+
+.AP_mid-left img {
+    width: 100%;
+    max-width: 400px;
+    height:600px;
+    border-radius: 8px;
+    margin-left: 15%;
+}
+
+.AP_mid-right {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.AP_mid-right-top{
+    height: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 40%;
+}
+
+.AP_mid-right-bottom{
+    margin-left: 5%;
+    border-radius: 0px;
+    width: 55%;
+    font-family: 'Monda', sans-serif;
+    position: relative;
+    bottom: 30px;
+}
+
+
+
+
+.AP_mid-right-top h3 {
+    position: relative;
+    color: #1971B1;
+    margin-bottom: 10px;
+    font-size: 40px;
+    top:-12%;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #000000;
+
+}
+
+
+.AP_mid-right-bottom h4 {
+    margin-bottom: 9px;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Monda', sans-serif;
+    font-weight: normal;
+}
+.AP_mid-right-bottom p {
+    margin-bottom: 9px;
+    font-family: 'Monda', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    width: 400px;
+}
+
+.AP_mid-right-top-images {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top:-9%;
+}
+
+.AP_mid-right-top-images img {
+    width: 100%;
+    max-width: 215px;
+    height: 150px;
+    border-radius: 15px;
+
+}
+
+
+.AP_footer {
+    text-align: center;
+    width: 1100px;
+    position: relative;
+    bottom: 50px;
+}
+
+.AP_footer h4 {
+    font-size: 34px;
+    color: #1971B1;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: 'Monda', sans-serif;
+    font-weight: normal;
+}
+
+.AP_footer p {
+    font-size: 24px;
+    font-family: 'Monda', sans-serif;
+    color: #000000;
+}
+
+
+
+.PlacesPage {
+    background-image: url('images/2.png');
+    height: 100vh; /* Set the height to cover the viewport */
+    width: 100%; /* Set the width to cover the viewport */
+    background-size: 100% 100%; /* Ensure the background covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+
+
+.PP_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.PP_header h2 {
+    font-size: 40px;
+    letter-spacing: 15px;
+    font-family: 'Noto Serif', serif;
+    background-color: #fff;
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    top: 40px; /* Add margin to separate it from the search filter */
+    
+}
+
+.PP_search-filter-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 2px;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 15px;
+    width: auto;
+}
+
+.PP_search-filter-grid .search-bar {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.search-bar {
+    border-radius: 15px;
+    height: 30px;
+    padding-left: 14%;
+    background-image: url(images/icon-search.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.filter-dropdowns h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    position: relative;
+    bottom: 15px;
+}
+
+.filter-dropdowns select{
+    width: 200px;
+    border-radius: 18px;
+    border: 0;
+    height: 30px;
+    
+    padding-left: 10px;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+
+.PP_search-filter-grid .filter-dropdowns {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #D9D9D9;
+    display: flex;
+    gap: 9px;
+    border-radius: 9px;
+    padding: 5px;
+    height: 30px;
+    margin-top: 2px;
+}
+
+.PP_search-filter-grid .find-button {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: stretch;
+}
+
+.find-button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 35px;
+    height: 48px;
+    position: relative;
+    top: 9px;
+   
+    cursor: pointer;
+    border: none; /* No border for a button-like appearance */
+}
+
+.find-button:hover {
+    background-color: #333333; /* Darker on hover for visual feedback */
+}
+
+
+.PP_list-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure the container uses the full width available */
+    margin-top: 20px; /* Optional: Add some top margin for better spacing */
+}
+
+.PP_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Auto-fill grid with responsive card sizes */
+    gap: 20px; /* Set a suitable gap between cards */
+    max-width: 700px; /* Maximum width of the grid container */
+    width: 100%; /* Use full width to center align the grid */
+    padding: 20px; /* Padding around the grid for better spacing from edges */
+    position: relative;
+    bottom: 30px;
+}
+
+.PP_card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Rounded corners for cards */
+    overflow: hidden; /* Ensures no overflow from content inside cards */
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    width:340px; /* Stack image and text vertically */
+    font-family: 'Mukta', sans-serif; 
+    padding-bottom: -10px;
+}
+
+.PP_card img {
+    width: 320px; /* Full width of the card */
+    height: 200px; 
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.PP_card h3{
+    /* Padding inside the card for text */
+    font-size: 30px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 5px;
+    
+} 
+.PP_card p {
+    padding-left: 10px; /* Padding inside the card for text */
+    font-size: 19px;
+    position: relative;
+    padding-right: 1px;
+    position: relative;
+    bottom: 20px;
+    font-style: italic;
+    color: #363636;
+}
+.PP_card a{
+    text-decoration: none;
+    color: #000000;
+}
+.PP_card a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.Searchbar img{
+    position: relative;
+    top: 10px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 3px;
+    left: 10px;
+}
+
+
+
+
+.Searchbar img{
+    position: relative;
+    top: 10px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 3px;
+    left: 10px;
+}
+
+
+
+
+.PP_button .show-more {
+    padding: 20px 30px;
+    background-color: #77BD56;
+    filter: opacity(.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    left: 45%;
+    bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    position: relative;
+    bottom: 200px;
+}
+
+
+
+
+.ContactPage {
+    background-image: url('images/3.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Mukta', sans-serif;
+    height: 450px; /* Adjusted to match visual dimensions */
+}
+
+.contact-info {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 40px;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; /* Reduces spacing between contact info lines */
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 20px; /* Smaller icons for a cleaner look */
+    color: #333; /* Subtle icon color */
+}
+
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 9px;
+}
+.contact-details i{
+    font-size: 20px;  /* Adjust the font size as needed */
+    color: #4a4a4a;
+}
+.contact-footer i{
+    font-size: 20px;  /* Adjust the font size as needed */
+    color: #000000;
+}
+
+/* Icon styling */
+.contact-info i {
+    margin-right: 10px;
+    vertical-align: middle; 
+    transition: color 0.3s;
+    font-size: 30px;
+}
+
+
+.contact-info i:hover {
+    color: #007bff;  /* Icon color on hover */
+}
+
+.contact-info h2{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+}
+.contact-info h3{
+    font-family: 'Monda', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: #1971B1;
+    position: relative;
+    bottom: 10px;
+}
+.contact-info p{
+    font-family: 'Monda', sans-serif;
+    font-size: 22px;
+}
+.we{
+    position: relative;
+    bottom: 25px;
+}
+
+
+.contact-details .num{
+    position: relative;
+    right: 11px;
+}
+.contact-details .mail{
+    position: relative;
+    right: 8px;
+    color: #488632;
+    font-weight: bold;
+}
+
+.contact-details .add i{
+    position: relative;
+    right: 9px;
+    
+}
